@@ -1,0 +1,21 @@
+{
+  "name": "asphalo-main",
+  "description": "Asphalo Main Site",
+  "main": "index.js",
+  "authors": [
+    "brayn003@gmail.com"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/brayn003/asphalo-main",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

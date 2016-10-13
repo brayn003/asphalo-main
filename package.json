@@ -1,0 +1,27 @@
+{
+  "name": "asphalo-main",
+  "version": "1.0.0",
+  "description": "Asphalo Main Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brayn003/asphalo-main.git"
+  },
+  "author": "brayn003@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brayn003/asphalo-main/issues"
+  },
+  "homepage": "https://github.com/brayn003/asphalo-main#readme",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "browser-sync": "^2.17.3",
+    "gulp": "^3.9.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2"
+  }
+}
