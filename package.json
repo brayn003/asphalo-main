@@ -20,8 +20,12 @@
     "bower": "^1.7.9",
     "browser-sync": "^2.17.3",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-inject": "^4.1.0",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.7.3",
+    "gulp-uglify": "^2.0.0"
   }
 }
