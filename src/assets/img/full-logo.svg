@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="4.369987in"
+   height="2.9310827in"
+   viewBox="0 0 393.29883 263.79744"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="full-logo2.svg"
+   inkscape:export-filename="/home/brayn003/www/asphalo-assets/full-logo-new.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4199"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.94117647;"
+         offset="0"
+         id="stop4201" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="-144.74691"
+     inkscape:cy="119.12938"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="in" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-263.69456,123.90437)">
+    <path
+       style="fill:#333333;fill-opacity:1"
+       clip-path="none"
+       d="m 397.1152,-120.33391 c 2.16703,0.89784 3.75374,2.77211 5.21376,4.71148 L 497.9128,12.881527 c 19.57413,-26.539304 21.06196,-41.497285 6.10667,-70.888107 -20.15785,-39.532064 -65.3744,-77.96041 -106.90427,-62.32733 z m -12.15437,25.131197 c 32.47836,14.874559 130.49522,27.735015 145.5378,57.361622 12.33893,24.145183 -83.14608,66.101129 -102.24629,80.785338 l -0.0209,-0.0034 c 0,0 -35.23812,-112.410812 -43.30431,-138.142226 z m 27.59125,24.80118 38.98119,115.186 c 4.74935,-0.180936 11.86916,-3.954717 15.8072,-5.94829 5.45785,-2.819232 10.60231,-6.207669 15.34756,-10.1088 l -70.13595,-99.12894 z"
+       id="path3397"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       sodipodi:nodetypes="ccccccccccccccccc" />
+    <g
+       transform="matrix(1.0559318,0,0,0.94703085,-325.71429,184.28571)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:263.61224365px;line-height:100%;font-family:Ailerons;-inkscape-font-specification:'Ailerons, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="text3344" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="248.88956"
+       y="139.15807"
+       id="text4402"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4404"
+         x="248.88956"
+         y="139.15807"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:105px;line-height:100%;font-family:Ailerons;-inkscape-font-specification:'Ailerons, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1">Asphalo</tspan></text>
+  </g>
+</svg>
