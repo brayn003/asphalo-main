@@ -20,7 +20,7 @@ var resources = {
 
 
 gulp.task('html',function(){
-	console.log("Html-ing ...");
+	// console.log("Html-ing ...");
 	return gulp.src('./src/html/**/*.html')
 	.pipe(gulp.dest('./dist'));
 });
@@ -38,7 +38,7 @@ gulp.task('inject',['html'],function(){
 	// 	appJs = gulp.src('app.js', {read: false}),
 	// 	vendorCss = gulp.src('./dist/css/vendor.css', {read: false}),  
 	// 	appCss = gulp.src('./dist/css/app.css', {read: false});  
-	console.log("Funcing");
+	// console.log("Funcing");
 	return gulp.src('./dist/index.html')
   	.pipe(inject(gulp.src([	'./dist/js/vendor.js',
   							'./dist/js/app.js',
@@ -58,7 +58,7 @@ gulp.task('vendor-css', function(){
 });
 
 gulp.task('sass', function(){
-	console.log("Sassing Heavy ...");
+	// console.log("Sassing Heavy ...");
 	return gulp.src('./src/sass/**/*.scss')
 	.pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
@@ -69,7 +69,7 @@ gulp.task('sass', function(){
 
 gulp.task('vendor-js',function(){
 	var jsFiles = resources.js.concat('./src/js/**/*.js');
-	console.log('js-ing ...')
+	// console.log('js-ing ...')
 	return gulp.src(resources.js)
 	// .pipe(sourcemaps.init())
     .pipe(concat('vendor.js'))
