@@ -4,17 +4,17 @@ var gulp = require('gulp'),
 	sourcemaps = require('gulp-sourcemaps'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify'),
+	uglifyCss = require('gulp-uglifycss'),
 	browserSync = require('browser-sync').create();
 
 var path = {
 	'bower' : 'bower_components/'
 }
 var resources = {
-	'sass' : {
-		'bootstrap' : [path.bower+'assets/bootstrap/']
-	},
-	'js' : [path.bower+'jquery/dist/jquery.js',
-			path.bower+'bootstrap-sass/assets/javascripts/bootstrap.js']
+	'css' 	: [	path.bower+'animate.css/animate.css'],
+	'js' 	: [	path.bower+'jquery/dist/jquery.js',
+				path.bower+'bootstrap-sass/assets/javascripts/bootstrap.js'],
+	'fonts' : [	path.bower+'bootstrap-sass/assets/fonts/**/*']
 }
 
 
@@ -26,19 +26,36 @@ gulp.task('html',function(){
 });
 
 var injectFunc = function(){
-	var vendorJs = gulp.src('vendor.js', {read: false}),
-		appJs = gulp.src('app.js', {read: false}),
-		cssStream = gulp.src('./dist/css/**/*.css', {read: false});  
-	console.log("Funcing");
-	return gulp.src('./dist/index.html')
-  	.pipe(inject(gulp.src(['./dist/js/vendor.js','./dist/js/app.js','./dist/css/**/*.css'], {read: false}), {relative: true}))
-  	.pipe(gulp.dest('./dist'));
 }
 
 // gulp.task('html',['html-dist'],function(){
 // 	htmlFunc();
 //   	browserSync.reload();
 // });
+
+gulp.task('inject',['html'],function(){
+	// var vendorJs = gulp.src('vendor.js', {read: false}),
+	// 	appJs = gulp.src('app.js', {read: false}),
+	// 	vendorCss = gulp.src('./dist/css/vendor.css', {read: false}),  
+	// 	appCss = gulp.src('./dist/css/app.css', {read: false});  
+	console.log("Funcing");
+	return gulp.src('./dist/index.html')
+  	.pipe(inject(gulp.src([	'./dist/js/vendor.js',
+  							'./dist/js/app.js',
+  							'./dist/css/vendor.css',
+  							'./dist/css/asphalo.css'],
+  							{read: false}), {relative: true}))
+  	.pipe(gulp.dest('./dist'));
+});
+
+gulp.task('vendor-css', function(){
+	return gulp.src(resources.css)
+	.pipe(sourcemaps.init())
+    .pipe(concat('vendor.css'))
+	.pipe(uglifyCss())
+	.pipe(sourcemaps.write())
+	.pipe(gulp.dest('./dist/css'))
+});
 
 gulp.task('sass', function(){
 	console.log("Sassing Heavy ...");
@@ -68,11 +85,24 @@ gulp.task('js',function(){
     .pipe(uglify())
     .pipe(sourcemaps.write())
 	.pipe(gulp.dest('./dist/js'))
+});
+
+gulp.task('asset-fonts',function(){
+	gulp.src(resources.fonts)
+	.pipe(gulp.dest('./dist/assets/fonts'))
+});
+
+
+
+gulp.task('build', ['vendor-css','sass','vendor-js','js','asset-fonts','inject']);
+
+gulp.task('reload', function(){
+	return browserSync.reload();		
 })
 
-gulp.task('build', ['sass','vendor-js','js','html'],function(){
-	injectFunc();
-});
+gulp.task('inject-reload', ['inject'], function(){
+	return browserSync.reload();
+})
 
 gulp.task('serve', ['build'], function(){
 	browserSync.init({
@@ -81,6 +111,6 @@ gulp.task('serve', ['build'], function(){
         }
     });
     gulp.watch("./src/sass/**/*.scss", ['sass']);
-    gulp.watch("./src/js/**/*.js", ['js']).on('change', browserSync.reload);;
-    gulp.watch("./src/html/**/*.html", ['html']);
+    gulp.watch("./src/js/**/*.js", ['js','reload']);
+    gulp.watch("./src/html/**/*.html", ['inject-reload']);
 });
