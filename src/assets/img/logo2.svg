@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2.6398654in"
+   height="2.6398654in"
+   viewBox="0 0 237.58789 237.58788"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="full-logo2.svg"
+   inkscape:export-filename="/home/brayn003/www/asphalo-assets/full-logo-new.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4199"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.94117647;"
+         offset="0"
+         id="stop4201" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="64.556741"
+     inkscape:cy="102.1581"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="in" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-337.23362,114.66609)">
+    <path
+       style="fill:#333333;fill-opacity:1;stroke:none;stroke-opacity:1"
+       d="M 192.33398,9.2382812 A 118.79394,118.79394 0 0 0 73.539062,128.0332 118.79394,118.79394 0 0 0 192.33398,246.82617 118.79394,118.79394 0 0 0 311.12695,128.0332 118.79394,118.79394 0 0 0 192.33398,9.2382812 Z M 156.21875,44.912109 c 35.37781,-0.0268 70.18214,32.462613 87.21289,65.775391 12.79594,5.82799 22.5755,12.46927 26.54492,20.28711 4.51362,8.83237 -5.4281,20.04919 -20.7539,31.44141 -2.67894,5.93246 -6.60321,12.19182 -11.83204,19.28125 l -5.58789,-7.51368 c -5.99644,3.75078 -12.23296,7.42396 -18.40625,10.96289 l 8.76954,12.39649 c -4.74525,3.90113 -9.88981,7.29014 -15.34766,10.10937 -3.93804,1.99358 -11.05924,5.76633 -15.80859,5.94727 l -4.51368,-13.33984 c -8.25577,4.65021 -15.0139,8.61418 -18.76757,11.5 l -0.0195,-0.002 -43.30468,-138.142576 0.0332,-0.002 c 9.63439,4.412393 25.08697,8.654975 42.37891,13.203125 l -25.00981,-33.62296 c -1.46002,-1.93937 -3.04781,-3.813097 -5.21484,-4.710937 6.48904,-2.442669 13.06755,-3.565344 19.62695,-3.570313 z m 10.59766,41.904297 64.98632,87.367184 c 6.20967,-3.88414 12.12911,-7.83472 17.41993,-11.76757 7.34968,-16.27574 5.23373,-30.06776 -5.72657,-51.60743 -0.0206,-0.0404 -0.0438,-0.0806 -0.0645,-0.12109 -21.31115,-9.7063 -50.99675,-17.132886 -76.61523,-23.871094 z m 19.67968,113.443364 c 7.95821,-4.48261 17.31038,-9.61565 26.90039,-15.11329 L 152.0293,98.414062 186.49609,200.25977 Z"
+       id="path4207"
+       transform="translate(263.69456,-123.90437)"
+       inkscape:connector-curvature="0" />
+    <g
+       transform="matrix(1.0559318,0,0,0.94703085,-325.71429,184.28571)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:263.61224365px;line-height:100%;font-family:Ailerons;-inkscape-font-specification:'Ailerons, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="text3344" />
+  </g>
+</svg>
