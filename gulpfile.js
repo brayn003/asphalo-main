@@ -27,6 +27,13 @@ gulp.task('html',function(){
 });
 
 var injectFunc = function(){
+	return gulp.src('./dist/index.html')
+  	.pipe(inject(gulp.src([	'./dist/js/vendor.js',
+  							'./dist/js/app.js',
+  							'./dist/css/vendor.css',
+  							'./dist/css/asphalo.css'],
+  							{read: false}), {relative: true}))
+  	.pipe(gulp.dest('./dist'));
 }
 
 // gulp.task('html',['html-dist'],function(){
@@ -35,18 +42,12 @@ var injectFunc = function(){
 // });
 
 gulp.task('inject',['html'],function(){
+	injectFunc();
 	// var vendorJs = gulp.src('vendor.js', {read: false}),
 	// 	appJs = gulp.src('app.js', {read: false}),
 	// 	vendorCss = gulp.src('./dist/css/vendor.css', {read: false}),  
 	// 	appCss = gulp.src('./dist/css/app.css', {read: false});  
 	// console.log("Funcing");
-	return gulp.src('./dist/index.html')
-  	.pipe(inject(gulp.src([	'./dist/js/vendor.js',
-  							'./dist/js/app.js',
-  							'./dist/css/vendor.css',
-  							'./dist/css/asphalo.css'],
-  							{read: false}), {relative: true}))
-  	.pipe(gulp.dest('./dist'));
 });
 
 gulp.task('vendor-css', function(){
@@ -100,7 +101,9 @@ gulp.task('asset-img',function(){
 
 
 
-gulp.task('build', ['vendor-css','sass','vendor-js','js','asset-fonts','asset-img','inject']);
+gulp.task('build', ['vendor-css','sass','vendor-js','js','asset-fonts','asset-img','html'],function(){
+	injectFunc();
+});
 
 gulp.task('reload', function(){
 	return browserSync.reload();		

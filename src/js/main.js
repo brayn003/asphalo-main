@@ -33,48 +33,50 @@ Magnetic = new function(){
 	
 	var skinIndex = 0;
 	var skins = [{
-		glowA: 'rgba(255,22,22,0.0)',
+		glowA: 'rgba(22,22,22,0.0)',
 		glowB: 'rgba(22,22,22,0.0)',
 		particleFill: '#333333',
 		fadeFill: 'rgba(255,255,255,.6)',
-		useFade: true
+		useFade: false
 	}, {
 		glowA: 'rgba(233,143,154,0.0)',
 		glowB: 'rgba(0,143,154,0.0)',
 		particleFill: '#FFFFFF',
 		fadeFill: 'rgba(51,51,51,.6)',
 		useFade: true
-	}, {
-		glowA: 'rgba(230,0,0,0.3)',
-		glowB: 'rgba(230,0,0,0.0)',
-		particleFill: '#ffffff',
-		fadeFill: 'rgba(11,11,11,.6)',
-		useFade: true
-	}, {
-		glowA: 'rgba(0,230,0,0.3)',
-		glowB: 'rgba(0,230,0,0.0)',
-		particleFill: 'rgba(0,230,0,0.7)',
-		fadeFill: 'rgba(22,22,22,.6)',
-		useFade: true
-	}, {
-		glowA: 'rgba(0,0,0,0.3)',
-		glowB: 'rgba(0,0,0,0.0)',
-		particleFill: '#333333',
-		fadeFill: 'rgba(255,255,255,.6)',
-		useFade: true
-	}, {
-		glowA: 'rgba(0,0,0,0.0)',
-		glowB: 'rgba(0,0,0,0.0)',
-		particleFill: '#333333',
-		fadeFill: 'rgba(255,255,255,.2)',
-		useFade: true
-	}, {
-		glowA: 'rgba(230,230,230,0)',
-		glowB: 'rgba(230,230,230,0.0)',
-		particleFill: '#ffffff',
-		fadeFill: '',
-		useFade: false
-	}];
+	}
+	// , {
+	// 	glowA: 'rgba(230,0,0,0.3)',
+	// 	glowB: 'rgba(230,0,0,0.0)',
+	// 	particleFill: '#ffffff',
+	// 	fadeFill: 'rgba(11,11,11,.6)',
+	// 	useFade: true
+	// }, {
+	// 	glowA: 'rgba(0,230,0,0.3)',
+	// 	glowB: 'rgba(0,230,0,0.0)',
+	// 	particleFill: 'rgba(0,230,0,0.7)',
+	// 	fadeFill: 'rgba(22,22,22,.6)',
+	// 	useFade: true
+	// }, {
+	// 	glowA: 'rgba(0,0,0,0.3)',
+	// 	glowB: 'rgba(0,0,0,0.0)',
+	// 	particleFill: '#333333',
+	// 	fadeFill: 'rgba(255,255,255,.6)',
+	// 	useFade: true
+	// }, {
+	// 	glowA: 'rgba(0,0,0,0.0)',
+	// 	glowB: 'rgba(0,0,0,0.0)',
+	// 	particleFill: '#333333',
+	// 	fadeFill: 'rgba(255,255,255,.2)',
+	// 	useFade: true
+	// }, {
+	// 	glowA: 'rgba(230,230,230,0)',
+	// 	glowB: 'rgba(230,230,230,0.0)',
+	// 	particleFill: '#ffffff',
+	// 	fadeFill: '',
+	// 	useFade: false
+	// }
+	];
 	
 	this.init = function(){
 	
@@ -89,16 +91,16 @@ Magnetic = new function(){
 			
 			// Register event listeners
 			document.addEventListener('mousemove', documentMouseMoveHandler, false);
-			canvas.addEventListener('mousedown', documentMouseDownHandler, false);
-			document.addEventListener('mouseup', documentMouseUpHandler, false);
-			document.addEventListener('keydown', documentKeyDownHandler, false);
+			// canvas.addEventListener('mousedown', documentMouseDownHandler, false);
+			// document.addEventListener('mouseup', documentMouseUpHandler, false);
+			// document.addEventListener('keydown', documentKeyDownHandler, false);
 			window.addEventListener('resize', windowResizeHandler, false);
-			canvas.addEventListener('touchstart', documentTouchStartHandler, false);
+			// canvas.addEventListener('touchstart', documentTouchStartHandler, false);
 			document.addEventListener('touchmove', documentTouchMoveHandler, false);
-			document.addEventListener('touchend', documentTouchEndHandler, false);
+			// document.addEventListener('touchend', documentTouchEndHandler, false);
 			
-			document.getElementById('keyboardLeft').addEventListener('click', keyboardLeftHandler, false);
-			document.getElementById('keyboardRight').addEventListener('click', keyboardRightHandler, false);
+			// document.getElementById('keyboardLeft').addEventListener('click', keyboardLeftHandler, false);
+			// document.getElementById('keyboardRight').addEventListener('click', keyboardRightHandler, false);
 			
 			createBaseMagnets();
 			
@@ -112,6 +114,7 @@ Magnetic = new function(){
 		var w = 300;
 		var h = 300;
 		
+		console.log(mouseX,mouseY)
 		// for (var i = 0; i < MAGNETS_AT_START; i++) {
 			var position = {
 				x: SCREEN_WIDTH/2,
@@ -119,19 +122,35 @@ Magnetic = new function(){
 			};
 			
 			createMagnet(position);
+			createMagnet({x:mouseX,y:mouseY},false);
+			console.log(magnets);
 		// }
 	}
-	
-	function createMagnet(position){
+
+	function updateMagnet(magnet,position){
+		magnet.position.x = position.x;
+		magnet.position.y = position.y;
+	}
+
+	function createMagnet(position,particle){
+		if (particle == undefined || particle == true) {
+			particle = true;
+		}else{
+			particle = false;
+		}
+
 		var m = new Magnet();
 		m.position.x = position.x;
 		m.position.y = position.y;
 		
 		magnets.push(m);
 		
-		createParticles(m.position);
+		if (particle) {
+			createParticles(m.position);
+		}
 	}
 	
+
 	function createParticles(position){
 		for (var i = 0; i < PARTICLES_PER_MAGNET; i++) {
 			var p = new Particle();
@@ -148,6 +167,7 @@ Magnetic = new function(){
 	function documentMouseMoveHandler(event){
 		mouseX = event.clientX - (window.innerWidth - SCREEN_WIDTH) * .5;
 		mouseY = event.clientY - (window.innerHeight - SCREEN_HEIGHT) * .5;
+		console.log('mouse',mouseX,mouseY);
 	}
 	
 	function documentMouseDownHandler(event){
@@ -285,12 +305,14 @@ Magnetic = new function(){
 		for( j = 0, jlen = magnets.length; j < jlen; j++ ) {
 			magnet = magnets[j];
 			
-			if( magnet.dragging ) {
+			if( j == 1 ) {
 				magnet.position.x += ( mouseX - magnet.position.x ) * 0.2;
 				magnet.position.y += ( mouseY - magnet.position.y ) * 0.2;
 			}
-			else if( magnet.position.x < 0 || magnet.position.y < 0 || magnet.position.x > SCREEN_WIDTH || magnet.position.y > SCREEN_HEIGHT ) {
-				magnetToKill = j;
+
+			if( magnet.position.x < 0 || magnet.position.y < 0 || magnet.position.x > SCREEN_WIDTH || magnet.position.y > SCREEN_HEIGHT ) {
+				magnet.position.x = SCREEN_WIDTH/2;
+				magnet.position.y = SCREEN_HEIGHT/2;
 			}
 			
 			// Increase the size of the magnet center point depending on # of connections
@@ -410,7 +432,7 @@ function Magnet() {
 	this.position = { x: 0, y: 0 };
 	this.dragging = false;
 	this.connections = 0;
-	this.size = 1;
+	this.size = 10;
 }
 
 
