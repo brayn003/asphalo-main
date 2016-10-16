@@ -51,19 +51,20 @@ gulp.task('inject',['html'],function(){
 
 gulp.task('vendor-css', function(){
 	return gulp.src(resources.css)
-	.pipe(sourcemaps.init())
+	// .pipe(sourcemaps.init())
     .pipe(concat('vendor.css'))
 	.pipe(uglifyCss())
-	.pipe(sourcemaps.write())
+	// .pipe(sourcemaps.write())
 	.pipe(gulp.dest('./dist/css'))
 });
 
 gulp.task('sass', function(){
 	// console.log("Sassing Heavy ...");
 	return gulp.src('./src/sass/**/*.scss')
-	.pipe(sourcemaps.init())
+	// .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-    .pipe(sourcemaps.write())
+    .pipe(uglifyCss())
+    // .pipe(sourcemaps.write())
     .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.stream());
 });
@@ -81,10 +82,10 @@ gulp.task('vendor-js',function(){
 
 gulp.task('js',function(){
 	return gulp.src('./src/js/**/*.js')
-	.pipe(sourcemaps.init())
+	// .pipe(sourcemaps.init())
     .pipe(concat('app.js'))
     .pipe(uglify())
-    .pipe(sourcemaps.write())
+    // .pipe(sourcemaps.write())
 	.pipe(gulp.dest('./dist/js'))
 });
 
