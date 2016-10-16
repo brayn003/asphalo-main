@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 146.66782 168.68884"
+   height="1.8743205in"
+   width="1.6296425in">
+  <defs
+     id="defs4">
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient4199">
+      <stop
+         id="stop4201"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:0.94117647;" />
+    </linearGradient>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-384.92713,123.90437)"
+     id="layer1">
+    <path
+       id="path3397"
+       d="m 397.1152,-120.33391 c 2.16703,0.89784 3.75374,2.77211 5.21376,4.71148 L 497.9128,12.881527 c 19.57413,-26.539304 21.06196,-41.497285 6.10667,-70.888107 -20.15785,-39.532064 -65.3744,-77.96041 -106.90427,-62.32733 z m -12.15437,25.131197 c 32.47836,14.874559 130.49522,27.735015 145.5378,57.361622 12.33893,24.145183 -83.14608,66.101129 -102.24629,80.785338 l -0.0209,-0.0034 c 0,0 -35.23812,-112.410812 -43.30431,-138.142226 z m 27.59125,24.80118 38.98119,115.186 c 4.74935,-0.180936 11.86916,-3.954717 15.8072,-5.94829 5.45785,-2.819232 10.60231,-6.207669 15.34756,-10.1088 l -70.13595,-99.12894 z"
+       clip-path="none"
+       style="fill:#333333;fill-opacity:1" />
+    <g
+       id="text3344"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:263.61224365px;line-height:100%;font-family:Ailerons;-inkscape-font-specification:'Ailerons, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(1.0559318,0,0,0.94703085,-325.71429,184.28571)" />
+  </g>
+</svg>

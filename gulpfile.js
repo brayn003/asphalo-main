@@ -14,7 +14,7 @@ var resources = {
 	'css' 	: [	path.bower+'animate.css/animate.css'],
 	'js' 	: [	path.bower+'jquery/dist/jquery.js',
 				path.bower+'bootstrap-sass/assets/javascripts/bootstrap.js',
-				path.bower+'paper/dist/paper-full.js'],
+				path.bower+'gsap/src/TweenLite.js'],
 	'fonts' : [	path.bower+'bootstrap-sass/assets/fonts/**/*']
 }
 
