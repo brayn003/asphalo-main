@@ -17,7 +17,6 @@
   ],
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
-    "animate.css": "^3.5.2",
-    "gsap": "^1.19.0"
+    "animate.css": "^3.5.2"
   }
 }
