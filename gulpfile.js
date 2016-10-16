@@ -90,6 +90,7 @@ gulp.task('js',function(){
 });
 
 gulp.task('asset-fonts',function(){
+	resources.fonts.push('./src/assets/fonts/**/*')
 	gulp.src(resources.fonts)
 	.pipe(gulp.dest('./dist/assets/fonts'))
 });
