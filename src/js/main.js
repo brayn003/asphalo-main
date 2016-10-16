@@ -97,7 +97,7 @@ Magnetic = new function(){
 			window.addEventListener('resize', windowResizeHandler, false);
 			// canvas.addEventListener('touchstart', documentTouchStartHandler, false);
 			document.addEventListener('touchmove', documentTouchMoveHandler, false);
-			// document.addEventListener('touchend', documentTouchEndHandler, false);
+			document.addEventListener('touchend', documentTouchEndHandler, false);
 			
 			// document.getElementById('keyboardLeft').addEventListener('click', keyboardLeftHandler, false);
 			// document.getElementById('keyboardRight').addEventListener('click', keyboardRightHandler, false);
@@ -122,7 +122,7 @@ Magnetic = new function(){
 			};
 			
 			createMagnet(position);
-			createMagnet({x:mouseX,y:mouseY},false);
+			createMagnet({x:SCREEN_WIDTH/2,y:SCREEN_HEIGHT/2},false);
 			console.log(magnets);
 		// }
 	}
@@ -165,9 +165,8 @@ Magnetic = new function(){
 	}
 	
 	function documentMouseMoveHandler(event){
-		mouseX = event.clientX - (window.innerWidth - SCREEN_WIDTH) * .5;
-		mouseY = event.clientY - (window.innerHeight - SCREEN_HEIGHT) * .5;
-		console.log('mouse',mouseX,mouseY);
+			mouseX = event.clientX - (window.innerWidth - SCREEN_WIDTH) * .5;
+			mouseY = event.clientY - (window.innerHeight - SCREEN_HEIGHT) * .5;
 	}
 	
 	function documentMouseDownHandler(event){
@@ -243,12 +242,14 @@ Magnetic = new function(){
 	}
 	
 	function documentTouchEndHandler(event) {
-		mouseIsDown = false;
+		// mouseIsDown = false;
 		
-		for( var i = 0, len = magnets.length; i < len; i++ ) {
-			magnet = magnets[i];
-			magnet.dragging = false;
-		}
+		// for( var i = 0, len = magnets.length; i < len; i++ ) {
+		// 	magnet = magnets[i];
+		// 	magnet.dragging = false;
+		// }
+		mouseX = SCREEN_WIDTH/2;
+		mouseY = SCREEN_HEIGHT/2;
 	}
 	
 	function keyboardLeftHandler(event) {
@@ -310,7 +311,7 @@ Magnetic = new function(){
 				magnet.position.y += ( mouseY - magnet.position.y ) * 0.2;
 			}
 
-			if( magnet.position.x < 0 || magnet.position.y < 0 || magnet.position.x > SCREEN_WIDTH || magnet.position.y > SCREEN_HEIGHT ) {
+			if( mouseX < 10 || mouseY < 10 || mouseX > SCREEN_WIDTH-10 || mouseY > SCREEN_HEIGHT-10 ) {
 				magnet.position.x = SCREEN_WIDTH/2;
 				magnet.position.y = SCREEN_HEIGHT/2;
 			}
