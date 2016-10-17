@@ -12,8 +12,8 @@ function sidebarScroll() {
 	// console.log($('#scroll-nav').children('.active').index())
 	// console.log($('#scroll-nav').children('li:not(.active)').outerHeight())
 	// console.log($('#scroll-nav').children('li.active').outerHeight())
-	console.log('correntoffset',currentOffset)
-	console.log('newoffset',newOffset)
+	// console.log('correntoffset',currentOffset)
+	// console.log('newoffset',newOffset)
 	// console.log(newOffset - currentOffset)
 	// console.log( newOffset - ((activeHeight/2)-currentOffset))
 
@@ -31,7 +31,7 @@ function toggleActiveClass(){
 			})
 			$(this).addClass('active');
 			// setTimeout(function(){
-				sidebarScroll();
+			sidebarScroll();
 			// },2000)
 		})
 	})
