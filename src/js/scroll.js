@@ -17,8 +17,10 @@ function sidebarScroll() {
 	// console.log(newOffset - currentOffset)
 	// console.log( newOffset - ((activeHeight/2)-currentOffset))
 
-	$('#scroll-nav').css('transform','translate3d(0,'+(newOffset - currentOffset)+'px,0)');
+	// $('#scroll-nav').css('transform','translate3d(0,'+(newOffset - currentOffset)+'px,0)');
+	$('#scroll-nav').css('top',newOffset+'px');
 }
+
 sidebarScroll()
 
 function toggleActiveClass(){

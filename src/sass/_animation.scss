@@ -9,6 +9,10 @@
 	animation: blinkout 0.8s cubic-bezier(.34,.38,0,1) 2s 1 forwards;
 }
 
+.ease-in-out{
+	transition: all 0.8s ease-in-out;
+}
+
 .ease-transform{
 	transition: transform 1s ease-in-out;
 }
