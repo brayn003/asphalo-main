@@ -282,7 +282,7 @@ Magnetic = new function(){
 		var cvx = (window.innerWidth - SCREEN_WIDTH) * .5;
 		var cvy = (window.innerHeight - SCREEN_HEIGHT) * .5;
 		
-		canvas.style.position = 'absolute';
+		// canvas.style.position = 'absolute';
 		// canvas.style.left = cvx + 'px';
 		// canvas.style.top = cvy + 'px';
 	}
