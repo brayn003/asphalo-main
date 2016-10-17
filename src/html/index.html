@@ -11,17 +11,16 @@
 </head>
 
 <body>
-	<nav class="sidebar">
-		<ul>
-			<li><h1>Home</h1></li>
-			<li><h1>About Us</h1></li>
-			<li><h1>Projects</h1></li>
-			<li><h1>Contact</h1></li>
+	<nav style="position: fixed;" class="sidebar">
+		<ul id="scroll-nav" class="ease-transform" style="position:absolute;top:50%;">
+			<li class="active">Home</li>
+			<li>About</li>
+			<li>Projects</li>
+			<li>Contact</li>
 		</ul>
 	</nav>
 	<div class="container-fluid full-height">
-			
-		<div>
+		<div id="#home">
 			<div class="vertical-center">
 				<canvas id="canvas-landing"></canvas>
 		   		<div id="logo-container">
@@ -30,7 +29,6 @@
 		   		</div>
 			</div>
 		</div>
-		
 	</div>
     <!-- inject:js -->
     <!-- endinject -->

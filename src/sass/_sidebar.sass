@@ -5,22 +5,44 @@
 	height: 100%
 	position: absolute
 	z-index: 1000
-	display: flex
-	align-items: center
-	justify-content: center
+	// display: flex
+	// align-items: center
+	// justify-content: center
 	ul
 		width: 100%
 		margin: 0
-		padding: 10px
+		padding: 10px 10px 10px 30px
 
 		li
 			// width: 100%
-			padding: 10px
+			padding: 20px 10px
+			text-transform: uppercase
 			display: block
-			text-align: center
-			font-weight: 600
+			text-align: left
+			// font-weight: 600
 			// letter-spacing: 10px
-			font-size: 72px !important
+			color: #666
+			font-size: 48px
+			font-family: $headings-font-family
+			letter-spacing: 14px
 
+			&.active
+				// font-weight: 600
+				letter-spacing: 18px
+				font-size: 96px
+				line-height: 1
+				border-left: solid #333 2px
+				padding-left: 30px
+				margin-left: 10px
+				color: #333
+				// &::before
+
+				// 	content: "  "
+				// 	margin-right: 10px
+				// 	width: 5px
+				// 	height: 100%
+				// 	display: inline-block
+				// 	background: #333
+				// 	vertical-align: middle
 
 

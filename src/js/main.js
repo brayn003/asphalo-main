@@ -6,14 +6,14 @@ function canvasResize(){
 	canvas.width = window.innerWidth;
 }
 
-canvasResize();
+// canvasResize();
 
 
 Magnetic = new function(){
 	
 	var isMobile = (navigator.userAgent.toLowerCase().indexOf('android') != -1) || (navigator.userAgent.toLowerCase().indexOf('iphone') != -1) || (navigator.userAgent.toLowerCase().indexOf('ipad') != -1);
 	
-	var SCREEN_WIDTH = window.innerWidth;
+	var SCREEN_WIDTH = document.body.clientWidth;
 	var SCREEN_HEIGHT = window.innerHeight;
 	
 	var MAGNETS_AT_START = 1;
@@ -273,9 +273,9 @@ Magnetic = new function(){
 	}
 	
 	function windowResizeHandler() {
-		SCREEN_WIDTH = window.innerWidth;
+		SCREEN_WIDTH = document.body.clientWidth;
 		SCREEN_HEIGHT = window.innerHeight;
-		
+		console.log(SCREEN_WIDTH,SCREEN_HEIGHT)
 		canvas.width = SCREEN_WIDTH;
 		canvas.height = SCREEN_HEIGHT;
 		
@@ -438,5 +438,4 @@ function Magnet() {
 
 
 Magnetic.init();
-	
 	
