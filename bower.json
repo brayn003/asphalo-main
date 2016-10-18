@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
-    "animate.css": "^3.5.2"
+    "animate.css": "^3.5.2",
+    "fullpage.js": "^2.8.7"
   }
 }

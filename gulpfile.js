@@ -11,9 +11,10 @@ var path = {
 	'bower' : 'bower_components/'
 }
 var resources = {
-	'css' 	: [	path.bower+'animate.css/animate.css'],
+	'css' 	: [	path.bower+'fullpage.js/dist/jquery.fullpage.css'],
 	'js' 	: [	path.bower+'jquery/dist/jquery.js',
-				path.bower+'bootstrap-sass/assets/javascripts/bootstrap.js'],
+				path.bower+'bootstrap-sass/assets/javascripts/bootstrap.js',
+				path.bower+'fullpage.js/dist/jquery.fullpage.js'],
 	'fonts' : [	path.bower+'bootstrap-sass/assets/fonts/**/*']
 }
 

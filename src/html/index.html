@@ -12,15 +12,15 @@
 
 <body>
 	<nav style="position: fixed;" class="sidebar">
-		<ul id="scroll-nav" class="ease-in-out" style="position:absolute;top:50%;">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Projects</a></li>
-			<li><a href="#">Contact</a></li>
+		<ul id="scroll-nav" class="ease-transform" style="position:absolute;">
+			<li class="active"><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
-	<div class="container-fluid full-height">
-		<div id="#home">
+	<div id="fullpage" class="container-fluid full-height">
+		<div class="section" data-anchor="home">
 			<div class="vertical-center">
 				<canvas id="canvas-landing"></canvas>
 		   		<div id="logo-container">
@@ -28,6 +28,15 @@
 		   			<!-- <h1>Asphalo</h1> -->
 		   		</div>
 			</div>
+		</div>
+		<div data-anchor="about" class="section">
+			<h1 class="text-right">Section 2</h1>
+		</div>
+		<div data-anchor="projects" class="section">
+			<h1 class="text-right">Section 3</h1>
+		</div>
+		<div data-anchor="contact" class="section">
+			<h1 class="text-right">Section 4</h1>
 		</div>
 	</div>
     <!-- inject:js -->
