@@ -117,12 +117,12 @@ Magnetic = new function(){
 		console.log(mouseX,mouseY)
 		// for (var i = 0; i < MAGNETS_AT_START; i++) {
 			var position = {
-				x: SCREEN_WIDTH/2,
+				x: 0.4*SCREEN_WIDTH,
 				y: SCREEN_HEIGHT/2
 			};
 			
 			createMagnet(position);
-			createMagnet({x:SCREEN_WIDTH/2,y:SCREEN_HEIGHT/2},false);
+			createMagnet({x:0.4*SCREEN_WIDTH,y:SCREEN_HEIGHT/2},false);
 			console.log(magnets);
 		// }
 	}
@@ -312,7 +312,7 @@ Magnetic = new function(){
 			}
 
 			if( mouseX < 10 || mouseY < 10 || mouseX > SCREEN_WIDTH-10 || mouseY > SCREEN_HEIGHT-10 ) {
-				magnet.position.x = SCREEN_WIDTH/2;
+				magnet.position.x = 0.4*SCREEN_WIDTH;
 				magnet.position.y = SCREEN_HEIGHT/2;
 			}
 			

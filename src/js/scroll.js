@@ -23,7 +23,9 @@ function scrollInit(){
 	$('#fullpage').fullpage({
 		css3: true,
 		onLeave: function(index, nextIndex, direction){
+            audio.play('click2');
             goToIndex(nextIndex-1);
+
         }
 	});
 }

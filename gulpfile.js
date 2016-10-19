@@ -102,9 +102,15 @@ gulp.task('asset-img',function(){
 });
 
 
+gulp.task('asset-sounds',function(){
+	gulp.src('./src/assets/sound/**/*')
+	.pipe(gulp.dest('./dist/assets/sound'))
+});
 
-gulp.task('build', ['vendor-css','sass','vendor-js','js','asset-fonts','asset-img','html'],function(){
-	injectFunc();
+
+
+gulp.task('build', ['vendor-css','sass','vendor-js','js','asset-sounds','asset-fonts','asset-img','html'],function(){
+	return injectFunc();
 });
 
 gulp.task('reload', function(){
