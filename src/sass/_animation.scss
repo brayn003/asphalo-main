@@ -25,3 +25,17 @@
 .animate-float{
 	animation: float 60s linear 0s 10 alternate;
 }
+
+
+@keyframes slowzoom {
+	0%	  { -webkit-transform: scale3d(1,1,1)}
+	100%  { -webkit-transform: scale3d(2,2,1)}
+}
+
+.animate-slowzoomin{
+	animation: slowzoom 60s linear 0s 10 forwards;
+}
+
+.animate-slowzoomout{
+	animation: slowzoom 60s linear 0s 1 reverse;
+}
