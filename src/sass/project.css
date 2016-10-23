@@ -1,0 +1,48 @@
+.cases-item figcaption {
+    background: rgba(9, 162, 35, 0.80);
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 25px;
+    padding: 20px;
+    text-align: center;
+    transform: scale(0);
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.cases-item figcaption small {
+    display: block;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.cases-item figcaption i {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 2px;
+}
+
+.cases-item div {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cases-item:hover figcaption {
+    transform: scale(1);
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}

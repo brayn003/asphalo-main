@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Asphalo Studios</title>
@@ -11,44 +11,73 @@
 </head>
 
 <body>
-	<nav style="position: fixed;" class="sidebar">
-		<ul id="scroll-nav" class="ease-transform" style="position:absolute;">
-			<li class="active"><a href="#home">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</nav>
-	<div id="fullpage" class="container-fluid no-padding full-height">
-		<div style="overflow:hidden;" class="section" data-anchor="home">
-			<div style="background-image:url('assets/img/star_sky.jpg');" class="background animate-float">
-				
-			</div>
-			<div class="vertical-center">
-				<canvas id="canvas-landing"></canvas>
-		   		<div id="logo-container">
-		   			<img src="assets/img/logo-light.svg">
-		   			<!-- <p>Asphalo</p> -->
-		   		</div>
-			</div>
-		</div>
-		<div data-anchor="about" class="section">
-			<div class="vertical-center full-height">
-				<div class="col-sm-offset-4 col-sm-8">
-					<p class="font-ailerons">Web development at Asphalo where creativity meets technology</p>
-				</div>
-			</div>
-		</div>
-		<div data-anchor="projects" class="section">
-			<h1 class="text-right">Section 3</h1>
-		</div>
-		<div data-anchor="contact" class="section">
-			<h1 class="text-right">Section 4</h1>
-		</div>
-	</div>
-	<audio id="audioControl">
-		<source id="audioSource" type="audio/mpeg">
-	</audio>
+    <nav style="position: fixed;" class="sidebar">
+        <ul id="scroll-nav" class="ease-transform" style="position:absolute;">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="fullpage" class="container-fluid no-padding full-height">
+        <div style="overflow:hidden;" class="section" data-anchor="home">
+            <div style="background-image:url('assets/img/star_sky.jpg');" class="background animate-float"> </div>
+            <div class="vertical-center">
+                <canvas id="canvas-landing"></canvas>
+                <div id="logo-container"> <img src="assets/img/logo-light.svg">
+                    <!-- <p>Asphalo</p> -->
+                </div>
+            </div>
+        </div>
+        <div data-anchor="about" class="section">
+            <div class="vertical-center full-height">
+                <div class="col-sm-offset-4 col-sm-8">
+                    <p class="font-ailerons">Web development at Asphalo where creativity meets technology</p>
+                </div>
+            </div>
+        </div>
+        <div data-anchor="projects" class="section">
+            <div class="vertical-center full-height">
+                <div class="col-sm-offset-4 col-sm-6">
+                    <div class="cases-item margin-bottom-20 animate bounceIn" data-delay="100">
+                        <a href="http://www.dbit.in/" target="_blank">
+                            <figure> <img src="assets/img/project1.jpg" alt="">
+                                <figcaption>
+                                    <div> <i class="glyphicon glyphicon-link"></i> DBIT <small>Engineering College Website</small> </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 ">
+                    <div class="cases-item margin-bottom-20 animate bounceIn" data-delay="200">
+                        <a href="https://zaya.in/" target="_blank">
+                            <figure> <img src="assets/img/project2.jpg" alt="">
+                                <figcaption>
+                                    <div> <i class="glyphicon glyphicon-link"></i> English Duniya <small> Learning  App for children </small> </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="cases-item margin-bottom-20 animate bounceIn" data-delay="200">
+                        <a href="https://www.teknack.in/" target="_blank">
+                            <figure> <img src="assets/img/pro3.jpg" alt="">
+                                <figcaption>
+                                    <div> <i class="glyphicon glyphicon-link"></i> Teknack <small>Online Gaming Event </small> </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-anchor="contact" class="section">
+            <h1 class="text-right">Section 4</h1> </div>
+    </div>
+    <audio id="audioControl">
+        <source id="audioSource" type="audio/mpeg"> </audio>
     <!-- inject:js -->
     <!-- endinject -->
 </body>
