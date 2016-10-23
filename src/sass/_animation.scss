@@ -16,3 +16,12 @@
 .ease-transform{
 	transition: all 0.7s ease-in-out;
 }
+
+@keyframes float {
+	0%	  { -webkit-transform: traslate3d(0,0,0)}
+	100%  { -webkit-transform: translate3d(-50%,-50%,0)}
+}
+
+.animate-float{
+	animation: float 60s linear 0s 10 alternate;
+}

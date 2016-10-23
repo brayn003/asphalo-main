@@ -35,7 +35,7 @@ Magnetic = new function(){
 	var skins = [{
 		glowA: 'rgba(22,22,22,0.0)',
 		glowB: 'rgba(22,22,22,0.0)',
-		particleFill: '#333333',
+		particleFill: '#FFFFFF',
 		fadeFill: 'rgba(255,255,255,.6)',
 		useFade: false
 	}, {
@@ -117,12 +117,12 @@ Magnetic = new function(){
 		console.log(mouseX,mouseY)
 		// for (var i = 0; i < MAGNETS_AT_START; i++) {
 			var position = {
-				x: 0.4*SCREEN_WIDTH,
+				x: SCREEN_WIDTH/2,
 				y: SCREEN_HEIGHT/2
 			};
 			
 			createMagnet(position);
-			createMagnet({x:0.4*SCREEN_WIDTH,y:SCREEN_HEIGHT/2},false);
+			createMagnet(position,false);
 			console.log(magnets);
 		// }
 	}
@@ -312,7 +312,7 @@ Magnetic = new function(){
 			}
 
 			if( mouseX < 10 || mouseY < 10 || mouseX > SCREEN_WIDTH-10 || mouseY > SCREEN_HEIGHT-10 ) {
-				magnet.position.x = 0.4*SCREEN_WIDTH;
+				magnet.position.x = SCREEN_WIDTH/2;
 				magnet.position.y = SCREEN_HEIGHT/2;
 			}
 			
